@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELICATO & GUSTOSO</title>
+    <link rel="icon" type="image/png" 
+    href="images/DG-Logo.png">
+    
+    <!--Animationen werden hier ergänzt: JavaScript-Teil-->
+    <script>
+      // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+    // JavaScript für das dynamische Skalieren des Bildes beim Scrollen
+    window.addEventListener('scroll', function() {
+        // Berechnet den Prozentsatz des Scrollfortschritts
+        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        // Berechnet die neue Bildbreite: 50% + (Scrollfortschritt * 50%)
+        var imageWidth = 50 + scrollPercentage * 300;
+        // Wendet die neue Breite auf das Bild an
+        document.getElementById('scrollImage').style.width = imageWidth + '%';
+    });
+
+    </script>
+
+    <!--CSS-Teil-->
+
+    <link rel="stylesheet" href="https://use.typekit.net/ewh4yji.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ewh4yji.css">
+   <style>
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  background-color: rgb(0, 0, 0);
+      }
+  .navbar{
+	/*background-color: rgba(32, 195, 81, 0.55);*/
+  border-color: gray;
+  border-bottom-width: 1px;
+  border-style: solid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-left: -10px;
+  margin-right: -5px;
+  z-index: 200;
+}
+header a {
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+	float: middle;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+  font-size: 25px;
+  padding-top: 0.5%;
+  position: relative;
+}
+.delizio {
+  /*background-color: antiquewhite;*/
+  z-index: 1;
+}
+.Läufer {
+  /*background-color: aliceblue;*/
+  position: absolute;   
+	height: 30px; width: 100%;
+  left: 0px; top: 0px;
+  z-index: -1;
+}
+marquee{
+  display: block;
+  color: rgb(34, 34, 34);
+  
+  font-size: 35px;
+  /*position: relative;*/
+  
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media only screen and (max-width: 500px) {
+  .navbar a {
+    /*font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
+    text-align: center;
+  }
+  
+  .Läufer {
+    font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
+   
+    
+  }
+
+  /*h1 {
+    background-color: rgb(255, 0, 0);
+  }*/
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media only screen and (max-width: 700px) {
+  .navbar a {
+    /*font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
+    text-align: center;
+  }
+  
+  .Läufer {
+    font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
+     /* Ändere den oberen Abstand für den Lauftext */
+  
+  }
+
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: rgba(186, 186, 186, 0.55);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 1px;
+  background: white;
+  width: 0%;
+}
+hr{
+  border-color: rgba(2, 2, 2, 0.53);
+  padding-top: 5%;
+}
+
+h1, h2, h3, h4{
+  color: white;
+  float: left;
+  padding-left: 30%;
+  padding-right: 20%;
+  margin: 2%;
+}
+h1{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: small;
+  margin-top: 1%;
+}
+h2{
+  font-family: questa-grande, serif;
+font-weight: 300;
+font-style: normal;
+  font-size: xx-large;
+}
+h3{
+  font-family: questa-grande, serif;
+font-weight: 300;
+font-style: normal;
+  font-size: larger;
+}
+h4{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: small;
+  padding-bottom: 5%;
+  margin-bottom: 23%;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+
+        .container {
+            height: 100%; /* Stellt sicher, dass genug Platz zum Scrollen vorhanden ist */
+            position: relative;
+            margin: 10%;
+            
+        }
+        .container img {
+            position: relative; 
+            left: 50%; /* Zentriert das Bild horizontal */
+            transform: translate(-50%, -50%); /* Korrigiert die Positionierung für echte Zentrierung */
+            max-width: 100%; /* Anfangsgröße des Bildes */
+            transition: width 0.5s ease-out; /* Glatte Übergangsanimation beim Ändern der Größe */
+          }
+
+@media only screen and (max-width: 700px) {
+  .Bild1{
+    padding-top: 300px;
+}}
+@media only screen and (max-width: 500px) {
+  .Bild1{
+    padding-top: 300px;
+}}
+.Schrank {
+  background-color: black;
+  
+  
+}
+
+.Geschichte{
+  display: block;
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: medium;
+  color: white;
+  padding: 8%;
+  padding-top: 5%;
+  margin-top: -33%;
+  position: relative;
+  background-color: black;
+}
+.Bild2{
+  display: flex;
+  flex-direction: row; /* Buttons untereinander anordnen */
+  justify-content: center; /* Vertikal zentrieren */
+  margin-block: 0%;
+  align-items: center;
+}
+.divleft {
+  background-color: black(255, 255, 255);
+  min-width: 600px;
+}
+.divright {
+  background-color: black;
+}
+.Bild2 img{
+  width: 100%;
+  height: auto;
+float: left; 
+margin-right: 8%;
+ 
+}
+.Bild2 p{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  color: white;
+  font-size: medium;
+  /*padding-left: 20%;
+  padding-right: 20%;
+  padding-top: auto;
+  padding-bottom: auto;
+  width: 40em;*/
+  float: left;
+  padding: 8%;
+}
+@media only screen and (max-width: 700px) {
+  .Bild2 {
+    flex-direction: column; /* Elemente untereinander anordnen */
+    align-items: center; /* Zentriert die Elemente horizontal */
+  }
+  .Bild2 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*background-color: rgb(145, 159, 76);*/
+    
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Bild2 {
+    flex-direction: column; /* Elemente untereinander anordnen */
+    align-items: center; /* Zentriert die Elemente horizontal */
+  }
+  .Bild2 img{
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  .Bild2 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*background-color: blueviolet;*/
+    /*width: 31em;*/
+  }
+}
+
+div.gallery:hover {
+  opacity: 0.6;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 10%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 10px;
+  float: left;
+  width: 24.99999%;
+  margin-top: 20px;
+}
+
+
+/*Responsive Verhalten*/
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Video1{
+  max-width: 100%;
+  height: auto;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+.Bild3{
+  display: flex;
+  flex-direction: row; /* Buttons untereinander anordnen */
+  justify-content: center; /* Vertikal zentrieren */
+  margin-block: 5%;
+  align-items: center;
+}
+
+.Bild3 img{
+  max-width: 100%;
+  height: auto;
+float: left; 
+margin-right: 8%;
+}
+.Bild3 p{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  color: white;
+  font-size: medium;
+  padding: 8%;
+}
+@media only screen and (max-width: 700px) {
+  .Bild3 {
+    flex-direction: column; /* Elemente untereinander anordnen */
+    align-items: center; /* Zentriert die Elemente horizontal */
+  }
+  .Bild3 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*background-color: rgb(145, 159, 76);*/
+    
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Bild3 {
+    flex-direction: column; /* Elemente untereinander anordnen */
+    align-items: center; /* Zentriert die Elemente horizontal */
+  }
+  .Bild3 img{
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  .Bild3 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*background-color: blueviolet;*/
+    /*width: 31em;*/
+  }
+}
+
+.Video2{
+  max-width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+.Abschlusstext{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: medium;
+  color: white;
+  padding: 8%;
+}
+
+.Text4real {
+  /*background-color: bisque;*/
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  align-items: center;
+}
+
+.Text4 {
+  /*background-color: rgb(13, 134, 40);*/
+  text-align: center;
+  
+  margin-bottom: 20px;
+}
+.Button4 {
+  /*background-color: aquamarine;*/
+  width: 100%;
+}
+.Bild4real{
+  /*background-color: blueviolet;*/
+  height: auto;
+  width: 100%;
+}
+.Bild4 img{
+  max-width: 100%;
+  height: auto;
+float: right; 
+margin-left: 8%;
+
+opacity: 0.5;
+}
+.Bild4 p{
+  font-family: questa-grande, serif;
+font-weight: 300;
+font-style: normal;
+  color: white;
+  font-size: small;
+  padding-top: 9%;
+  padding-left: 8%;
+  text-align: center;
+  font-size: x-large;
+}
+.Bild4 {
+  display: flex-box;
+  flex-direction: row; /* Buttons untereinander anordnen */
+  justify-content: center; /* Vertikal zentrieren */
+  align-items: center; /* Horizontal zentrieren */
+  text-align: center; /* Zentriert den Text */
+  overflow: hidden;
+  /*background-color: red;*/
+  margin-bottom: 150px;
+}
+
+.Bild4 button {
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+  border: none; /* Keine Rahmenlinie um den Button */
+  color: white; /* Schriftfarbe */
+  padding: 15px 32px; /* Innenabstand */
+  text-align: center; /* Ausrichtung des Textes */
+  text-decoration: none; /* Keine Unterstreichung des Textes */
+  /*display: inline-block; /* Anzeige als Inline-Block */
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Mauszeiger verwandelt sich in Hand-Zeiger, wenn man über den Button fährt */
+overflow: hidden;
+margin: 5px;
+}
+.Bild4 button.button1 {
+  background-color: red;
+  border: 1px solid red; 
+  position: relative;
+  margin-left: 11%;
+  
+} 
+.Bild4 button.button2 {
+  background-color: black;
+  color: white;
+  border: 1px solid white; 
+}
+.Bild4 button.button1:hover {
+  background-color: darkred; /* Hintergrundfarbe ändert sich, wenn man den Mauszeiger über den Button bewegt */
+  border: 1px solid darkred; 
+}
+.Bild4 button.button2:hover {
+background-color: darkred;
+border: 1px solid darkred;
+}
+/*Responsive Verhalten Button und Bild*/
+@media only screen and (max-width: 300px) {
+  .Bild4 {
+    flex-direction: column; /* Ändert die Anordnung auf untereinander */
+    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+    padding: 8px;
+  }
+}
+
+
+/*Responsive Verhalten*/
+@media only screen and (max-width: 700px) {
+.container img,
+.Bild2 img,
+.Bild3 img,
+.Bild4 img,
+.gallery img,
+.Video1 img,
+.Video2 img {
+  width: 100%; /* Ändere die Breite auf 100%, damit die Bilder responsiv sind */
+  height: auto; /* Autohöhe, um das Seitenverhältnis beizubehalten */
+}}
+
+.navbar2{
+	background-color: #000000;
+	color: white;
+  position: relative;
+  z-index: 1;
+}
+.navbar2 marquee{
+  display: block;
+  color: rgb(126, 126, 126);
+  margin-top: 30%;
+  font-size: 35px;
+}
+@media only screen and (max-width: 700px) {
+  .navbar2 marquee {
+    font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
+    margin-top: 10%; /* Ändere den oberen Abstand für den Lauftext */
+  }
+}
+
+.Logo a {
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+	float: middle;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+  font-size: larger;
+  padding-top: 2%;
+}
+.Badge{
+  position: relative;
+float: right;
+margin-right: 7%;
+}
+
+.Datenschutz{
+  font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: small;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-inline: 3%;
+  color: white;
+  margin-top: 8%;
+}
+
+footer {
+  font-size: x-small;
+  display: block;
+  color: white;
+  text-align: center;
+}
+   </style>
+<!--CSS-Teil endet hier-->
+
+  <!--Html-Teil geht weiter-->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="delizio"><a href="#brand">DELICATO&GUSTOSO</a></div>
+        <div class="Läufer"><marquee scrollamount="2">WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT WELT </marquee></div>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    </header>
+    <main>
+      <div class="Absatz1">
+        <h1>Januar 2024</h1>
+        <h2>Die neue Delicato&Gustoso -<br>Kampagne FS 24,<br>inspiriert von italienischer<br>Tradition</h2>
+        <h3>Die neue Kampagne unter der künstlerischen Leitung<br>von Rosa Stark,<br>erzählt eine zeitlose Reise in die groteske DNA Italiens.</h3>
+        <h4>| #WERBEKAMPAGNE  |</h4>
+      </div>
+        <!-- Das Bild mit einem bestimmten Ausschnitt -->
+<div class="Schrank"> 
+  <div class="container">
+    <img class="Bild1" src="images/Kuss-Bild1_neu_v2.png" id="scrollImage">
+  </div>
+  <div class="Geschichte">
+    </p2>Ende des 17. Jahrhunderts fand die delikate Sauce namens Ketchup erstmals seinen Weg in den Westen. Seit dem erfreuen sich die verschiedensten Kreationen in der ganzen Welt größter Bekanntheit. In der neuen Kampagne von Delicato&Gustoso kehren zwei handwerklich überragende und außergewöhnliche Formen des Klassikers zurück. Die Visionen werden dabei so gelungen eingefangen, dass die Essenz greifbar wird.</div>
+  </div>
+</div>
+<div class="Bild2">
+  <div class="divleft"><img src="images/Ketchup-mit-Brille_neu_v2.png" type="image/png"  height="500" width="500"></div>
+  <div class="divright"><p>Die Frauenkollektion zeigt ein authentisches Schauspiel zwischen der Eleganz des schwarzen und der unausgesprochenen Leidenschaft des roten Farbtons. Unterstrichen wird die Erscheinung von der Makellosigkeit und der weichen Seite des weiblichen Models. Zusammen erzeugen sie eine strahlende Atmosphäre der Milde, die einzigartig wirkt. Die Verkörperung von Selbstbewusstsein nimmt auf der Designer-Chaiselongue Platz und damit im Bewusstsein eines jeden Betrachters. Die Abwechslung der Farben und des Materials steht im Mittelpunkt der Kampagne.</p></div>
+</div>
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/KreisAusKetchup-Slider1_weiblich.jpeg">
+      <img src="images/KreisAusKetchup-Slider1_weiblich.jpeg" alt="Cinque Terre">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Frau-mit-Anzug_neu.png">
+      <img src="images/Frau-mit-Anzug_neu.png" alt="Forest">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Vergoldete-Tomate_neu.png">
+      <img src="images/Vergoldete-Tomate_neu.png" alt="Northern Lights">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="images/Bild1.png">
+      <img src="images/Bild1.png" alt="Mountains">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+
+
+  <div class="Video1">
+    <img src="images/Frau1-Slider1_v3_neu.png" type="image/png" height="100%" width="100%">
+  </div>
+  <div class="Bild3">
+    <div class="divleft"><img src="images/KetchupMitPulli_neu.png" type="image/png"  height="500" width="500"></div>
+    <div class="divright"><p>In den fesselnden Bildern der Herrenkollektion, die geschickt inszeniert wurden, verbinden sich würzige Aromen mit den Facetten der Männlichkeit zu einer harmonischen Einheit. Sie bilden dabei ein Universum aus Faszination und Anmut. Unterstützt wird dies durch das entschlossen wirkende männliche Model, das durch seine Präsenz den Raum einnimmt.</p></div>
+  </div>
+     <div class="responsive">
+      <div class="gallery">
+        <a target="_self" href="images/KreisAusKetchup-Slider1_v2.png">
+          <img src="images/KreisAusKetchup-Slider1_v2.png" alt="Cinque Terre">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_self" href="images/Mann-mit-Anzug_neu_v2.png">
+          <img src="images/Mann-mit-Anzug_neu_v2.png" alt="Forest">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_self" href="images/Vergoldete-Chili.jpeg">
+          <img src="images/Vergoldete-Chili.jpeg" alt="Northern Lights">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_self" href="images/3Personen-SpaghettiEssen_neu_v2.png">
+          <img src="images/3Personen-SpaghettiEssen_neu_v2.png" alt="Mountains">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+
+    
+    <div class="Video2">
+      <img src="images/Mann-mit-Dreadlocks-neu_v2.2.png" type="image/png" height="100%" width="100%">
+    </div>
+    <div class="Abschlusstext">
+    </p2>Die männlichen und weiblichen Formen der Körper fließen im Einklang und verkörpern dabei gegensätzliche Geschmackswelten, die sich beim genaueren Betrachten perfekt ergänzen und ein Bild von angenehm schmeichelnder Sanftheit und feuriger Sinnlichkeit malt. Das Material Glas zeigt, dass großen Wert auf beste Qualität und traditionelle Handwerkskunst gelegt wird. Es hebt den Glanz und die intensive Farbgebung der Sauce hervor. Zwei Dimensionen explodieren im Gaumen und lassen die Geschmacksknospen erblühen. Es entfaltet sich ein Sommer in Italien, zusammengesetzt aus besten Zutaten. Die reifen, sonnengeküssten Tomaten lassen einen angenehmen Geschmack zurück. Sie entfachen die Sehnsucht nach der Rückkehr in die Tiefen Italiens mit seinen milden und sinnlichen Seiten.
+    <br><br><br>Im Wesentlichen steht die neue Delicato&Gustoso Kampagne FS 24 für jahrhundertelange Entwicklung.</div>
+    </div>
+    <div class="Bild4">
+      <div class="Bild4real"><img src="images/Verzierte-Nägel_LetztesBild_neu2.png" type="image/png"  height="500" width="600">
+      </div>
+      <div class="Text4real">
+        <div class="Text4"><p>Entdecken Sie die neue Delicato&Gustoso
+          <br>FW 23-24-Kampagne, aufgenommen von<br>
+          Rosa Stark
+          </p>
+        </div>
+        <div class="Button4"><button class="button1">Jetzt ketchen!</button><!--Call-to-action-button-->
+        <button class="button2">Probiere jetzt</button>
+        </div>
+      </div><!--Ghost-button-->
+    </div>
+    <div>
+    <div class="navbar2"><!--Lauftext-->
+    <marquee scrollamount="2">WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO</marquee>
+    </div> 
+  </div>
+    <hr>
+    <div class="Logo">
+      <a href="#brand">DELICATO&GUSTOSO</a>
+      <div class="Badge"><img src="images/allyant-badge_weiß.png" type="image/png"  height="60" width="60"></div>
+    </div>
+    <div class="Datenschutz&Co">
+      <div class="Datenschutz">Datenschutzerklärung</div>
+      <div class="Datenschutz">Impressum</div>
+      <div class="Datenschutz">AGBs</div>
+    </div>
+    </main>
+  </body>
+<footer>
+  <hr>
+  <div id="copyright">
+    <div>&copy; 2024 <span class="logo">DELICATO&GUSTOSO - Alle Rechte vorbehalten</span>
+    </div>
+</footer>
+</html>
