@@ -24,7 +24,7 @@ function myFunction() {
         // Berechnet den Prozentsatz des Scrollfortschritts
         var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
         // Berechnet die neue Bildbreite: 50% + (Scrollfortschritt * 50%)
-        var imageWidth = 50 + scrollPercentage * 300;
+        var imageWidth = 80 + scrollPercentage * 300;
         // Wendet die neue Breite auf das Bild an
         document.getElementById('scrollImage').style.width = imageWidth + '%';
     });
@@ -44,6 +44,9 @@ function myFunction() {
   body {
   background-color: rgb(0, 0, 0);
       }
+
+
+
   .navbar{
 	/*background-color: rgba(32, 195, 81, 0.55);*/
   border-color: gray;
@@ -253,7 +256,7 @@ font-style: normal;
   font-size: medium;
   color: white;
   padding: 8%;
-  padding-top: 5%;
+  padding-top: 1%;
   margin-top: -33%;
   position: relative;
   background-color: black;
@@ -265,7 +268,7 @@ font-style: normal;
 }}
 @media only screen and (max-width: 500px) {
   .Geschichte{
-    padding-top: 20%;
+    padding-top: 5%;
 }}
 
 
@@ -278,13 +281,13 @@ font-style: normal;
 }
 .divleft {
   background-color: black;
-  min-width: 600px;
+  min-width: 50%;
 }
 .divright {
   background-color: black;
 }
 .Bild2 img{
-  width: 85%;
+  width: 100%;
   height: auto;
 float: left; 
 margin-right: 8%;
@@ -302,7 +305,8 @@ font-style: normal;
   padding-bottom: auto;
   width: 40em;*/
   float: left;
-  padding: 8%;
+  padding-left: 7%;
+  padding-right: 20%;
 }
 @media only screen and (max-width: 700px) {
   .Bild2 {
@@ -311,13 +315,15 @@ font-style: normal;
   }
   .Bild2 img{
     margin-top: 10%;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
   }
-
   .Bild2 p{
     margin-bottom: 10px;
     /*background-color: rgb(145, 159, 76);*/
-    
+  }
+  .divleft{
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -328,11 +334,15 @@ font-style: normal;
   }
   .Bild2 img{
     margin-top: 10%;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
   }
   .Bild2 p{
     margin-bottom: 10px;
-   padding-bottom: 100px;
+   padding-bottom: 50px;
+  }
+  .divleft{
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -369,18 +379,20 @@ div.desc {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin-top: 2px;
+    padding-left: 8%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .responsive {
-    width: 70%;
-    margin: 6px 0;
+    width: 80%;
     padding-left: 8%;
   }
   div.gallery img {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -412,7 +424,7 @@ div.desc {
 }
 
 .Bild3 img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 float: left; 
 margin-right: 8%;
@@ -423,7 +435,9 @@ font-weight: 400;
 font-style: normal;
   color: white;
   font-size: medium;
-  padding: 8%;
+  padding-right: 20%;
+  padding-left: 7%;
+  float: left;
 }
 @media only screen and (max-width: 700px) {
   .Bild3 {
@@ -431,8 +445,8 @@ font-style: normal;
     align-items: center; /* Zentriert die Elemente horizontal */
   }
   .Bild3 p{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 50px;
     /*background-color: rgb(145, 159, 76);*/
     
   }
@@ -443,12 +457,12 @@ font-style: normal;
     align-items: center; /* Zentriert die Elemente horizontal */
   }
   .Bild3 img{
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 0%;
   }
   .Bild3 p{
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 10%;
+    margin-bottom: 50px;
   }
 }
 
@@ -456,13 +470,23 @@ font-style: normal;
   max-width: 100%;
   height: auto;
   margin-top: 10%;
-  padding-bottom: 5%;
+  padding-bottom: 0%;
 }
 .Video2 img{
   width: 100%;
   height: auto;
 }
 
+@media only screen and (max-width: 700px) {
+  .Video2 {
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Video2 {
+   padding-bottom: 0%;
+  }
+}
 
 .Abschlusstext{
   font-family: "futura-pt", sans-serif;
@@ -470,20 +494,22 @@ font-weight: 400;
 font-style: normal;
   font-size: medium;
   color: white;
-  padding: 8%;
-  padding-bottom: 20%;
+  padding-left: 8%;
+padding-right: 8%;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 
 @media only screen and (max-width: 700px) {
   .Abschlusstext {
-    margin-top: 10%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 @media only screen and (max-width: 500px) {
   .Abschlusstext {
-   margin-top: 10%; 
-   margin-bottom: 20%;
+   margin-top: 5%; 
+   margin-bottom: 5%;
   }
 }
 
@@ -493,7 +519,6 @@ font-style: normal;
   display: flex;
   flex-direction: column;
   min-width: 200px;
-  align-items: center;
 }
 
 .Text4 {
@@ -515,9 +540,7 @@ font-style: normal;
   max-width: 100%;
   height: auto;
 float: right; 
-margin-left: 8%;
-
-opacity: 0.5;
+margin-left: 0%;
 }
 .Bild4 p{
   font-family: questa-grande, serif;
@@ -569,19 +592,65 @@ margin: 5px;
   border: 1px solid white; 
 }
 .Bild4 button.button1:hover {
-  background-color: darkred; /* Hintergrundfarbe ändert sich, wenn man den Mauszeiger über den Button bewegt */
-  border: 1px solid darkred; 
+  /*background-color: darkred; /* Hintergrundfarbe ändert sich, wenn man den Mauszeiger über den Button bewegt */
+  /*border: 1px solid darkred;*/
+  background-color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+color: rgb(255,0,0);
 }
 .Bild4 button.button2:hover {
-background-color: darkred;
-border: 1px solid darkred;
+background-color: rgb(255, 255, 255);
+border: 1px solid rgb(255, 255, 255);
+color: rgb(255,0,0);
 }
+
 /*Responsive Verhalten Button und Bild*/
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 900px) {
   .Bild4 {
     flex-direction: column; /* Ändert die Anordnung auf untereinander */
     align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
-    padding: 8px;
+  }
+  .Bild4 p{
+    align-items: center;
+  }
+  .Text4{
+    padding-right: 7%;
+  }
+  .Button4{
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Bild4 {
+    flex-direction: column; /* Ändert die Anordnung auf untereinander */
+    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+  }
+  .Bild4 p{
+    align-items: center;
+  }
+  .Text4{
+    padding-right: 7%;
+  }
+  .Button4{
+    padding-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Bild4 {
+    flex-direction: column; /* Ändert die Anordnung auf untereinander */
+    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+  }
+  .Bild4 p{
+    align-items: center;
+    padding-top: 2%;
+  }
+  .Text4{
+    padding-right: 7%;
+  }
+  .Button4{
+    padding-right: 7%;
   }
 }
 
@@ -648,10 +717,11 @@ font-style: normal;
 	float: middle;
 	display: block;
 	color: white;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
   font-size: larger;
-  padding-top: 10%;
+  padding-top: 20%;
+  padding-left: 1%;
 }
 
 .Badge{
@@ -670,16 +740,29 @@ align-items: center;
   .Badge{
     padding-top: 10%;
   }
+  .Logo a{
+    opacity: 0;
+    padding-left: 0%;
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .Logo{
 display: flex;
 flex-direction: column;
-align-items: center;
   }
   .Badge{
-    padding-top: 10%;
+    position: relative;
+float: middle;
+padding-top: 0%;
+padding-right: auto;
+padding-left: auto;
+  }
+  .Logo a{
+    opacity: 0;
+    padding-left: 0%;
+    position: relative;
   }
 }
 
@@ -697,13 +780,21 @@ font-size: medium;
   padding-inline: 3%;
   color: white;
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
+  border-color: rgb(84, 84, 84);
+border-width: 1px;
+border-style: solid;
+padding: 1%;
 }
 
 @media only screen and (max-width: 700px) {
   .Datenschutz {
     margin-top: 15%; /* Ändere den oberen Abstand für den Lauftext */
     margin-bottom: 10%;
+    border-color: rgb(84, 84, 84);
+border-width: 1px;
+border-style: solid;
+padding: 1%;
   }
 }
 
@@ -711,21 +802,36 @@ font-size: medium;
   .Datenschutz{
     margin-top: 15%; /* Ändere den oberen Abstand für den Lauftext */
     margin-bottom: 10%;
-    padding-left: 8%;
+    padding-left: 3%;
     font-size: small;
+    border-color: rgb(84, 84, 84);
+border-width: 1px;
+border-style: solid;
+padding: 3%;
   }
 }
 
 footer {
-  font-size: small;
+  font-size: x-small;
   display: block;
   color: white;
-  text-align: center;
+  text-align: left;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  border-color: rgb(84, 84, 84);
+border-width: 1px;
+border-style: solid;
+padding: 1%;
 }
 
 @media only screen and (max-width: 500px) {
   footer{
     font-size: x-small;
+    padding-left: 3%;
+    border-color: rgb(84, 84, 84);
+border-width: 1px;
+border-style: solid;
+padding: 2%;
   }
 }
 
