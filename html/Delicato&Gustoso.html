@@ -9,7 +9,7 @@
     
     <!--Animationen werden hier ergänzt: JavaScript-Teil-->
     <script>
-      // When the user scrolls the page, execute myFunction
+     
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -45,10 +45,7 @@ function myFunction() {
   background-color: rgb(0, 0, 0);
       }
 
-
-
   .navbar{
-	/*background-color: rgba(32, 195, 81, 0.55);*/
   border-color: gray;
   border-bottom-width: 1px;
   border-style: solid;
@@ -73,11 +70,9 @@ font-style: normal;
   position: relative;
 }
 .delizio {
-  /*background-color: antiquewhite;*/
   z-index: 1;
 }
 .Läufer {
-  /*background-color: aliceblue;*/
   position: absolute;   
 	height: 30px; width: 100%;
   left: 0px; top: 0px;
@@ -86,56 +81,33 @@ font-style: normal;
 marquee{
   display: block;
   color: rgb(34, 34, 34);
-  
   font-size: 35px;
-  /*position: relative;*/
   
 }
-
-
-/*Small devices (landscape phones, 576px and up)*/
 
 @media only screen and (max-width: 500px) {
   .navbar a {
-    /*font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
     text-align: center;
   }
-  
   .Läufer {
-    font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
-   
-    
-  }
-
-  /*h1 {
-    background-color: rgb(255, 0, 0);
-  }*/
-}
-
-/* Medium devices (tablets, 768px and up)*/
+    font-size: 20px; 
+  }}
 
 @media only screen and (max-width: 700px) {
   .navbar a {
-    /*font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
     text-align: center;
   }
-  
   .Läufer {
-    font-size: 20px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
-     /* Ändere den oberen Abstand für den Lauftext */
-  
-  }
+    font-size: 20px; 
+  }}
 
-}
 
-/* The progress container (grey background) */
 .progress-container {
   width: 100%;
   height: 1px;
   background: rgba(186, 186, 186, 0.55);
 }
 
-/* The progress bar (scroll indicator) */
 .progress-bar {
   height: 1px;
   background: white;
@@ -274,8 +246,8 @@ font-style: normal;
 
 .Bild2{
   display: flex;
-  flex-direction: row; /* Buttons untereinander anordnen */
-  justify-content: center; /* Vertikal zentrieren */
+  flex-direction: row; 
+  justify-content: center; 
   margin-block: 0%;
   align-items: center;
 }
@@ -299,19 +271,15 @@ font-weight: 400;
 font-style: normal;
   color: white;
   font-size: medium;
-  /*padding-left: 20%;
-  padding-right: 20%;
-  padding-top: auto;
-  padding-bottom: auto;
-  width: 40em;*/
   float: left;
   padding-left: 7%;
   padding-right: 20%;
 }
+
 @media only screen and (max-width: 700px) {
   .Bild2 {
-    flex-direction: column; /* Elemente untereinander anordnen */
-    align-items: center; /* Zentriert die Elemente horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
   .Bild2 img{
     margin-top: 10%;
@@ -319,18 +287,16 @@ font-style: normal;
   }
   .Bild2 p{
     margin-bottom: 10px;
-    /*background-color: rgb(145, 159, 76);*/
   }
   .divleft{
     max-width: 100%;
     height: auto;
-  }
-}
+  }}
 
 @media only screen and (max-width: 500px) {
   .Bild2 {
-    flex-direction: column; /* Elemente untereinander anordnen */
-    align-items: center; /* Zentriert die Elemente horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
   .Bild2 img{
     margin-top: 10%;
@@ -343,8 +309,7 @@ font-style: normal;
   .divleft{
     max-width: 100%;
     height: auto;
-  }
-}
+  }}
 
 
 div.gallery:hover {
@@ -374,15 +339,12 @@ div.desc {
   margin-top: 20px;
 }
 
-
-/*Responsive Verhalten*/
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
     margin-top: 2px;
     padding-left: 8%;
-  }
-}
+  }}
 
 @media only screen and (max-width: 500px) {
   .responsive {
@@ -393,8 +355,7 @@ div.desc {
     margin-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-}
+  }}
 
 .clearfix:after {
   content: "";
@@ -414,11 +375,10 @@ div.desc {
   height: auto;
 }
 
-
 .Bild3{
   display: flex;
-  flex-direction: row; /* Buttons untereinander anordnen */
-  justify-content: center; /* Vertikal zentrieren */
+  flex-direction: row; 
+  justify-content: center; 
   margin-block: 0%;
   align-items: center;
 }
@@ -439,22 +399,21 @@ font-style: normal;
   padding-left: 7%;
   float: left;
 }
+
 @media only screen and (max-width: 700px) {
   .Bild3 {
-    flex-direction: column; /* Elemente untereinander anordnen */
-    align-items: center; /* Zentriert die Elemente horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
   .Bild3 p{
     margin-top: 10%;
     margin-bottom: 50px;
-    /*background-color: rgb(145, 159, 76);*/
-    
-  }
-}
+  }}
+
 @media only screen and (max-width: 500px) {
   .Bild3 {
-    flex-direction: column; /* Elemente untereinander anordnen */
-    align-items: center; /* Zentriert die Elemente horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
   .Bild3 img{
     margin-top: 10%;
@@ -463,8 +422,7 @@ font-style: normal;
   .Bild3 p{
     margin-top: 10%;
     margin-bottom: 50px;
-  }
-}
+  }}
 
 .Video2{
   max-width: 100%;
@@ -480,13 +438,12 @@ font-style: normal;
 @media only screen and (max-width: 700px) {
   .Video2 {
     margin-bottom: 0%;
-  }
-}
+  }}
+
 @media only screen and (max-width: 500px) {
   .Video2 {
    padding-bottom: 0%;
-  }
-}
+  }}
 
 .Abschlusstext{
   font-family: "futura-pt", sans-serif;
@@ -506,6 +463,7 @@ padding-right: 8%;
     margin-bottom: 5%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .Abschlusstext {
    margin-top: 5%; 
@@ -515,24 +473,19 @@ padding-right: 8%;
 
 
 .Text4real {
-  /*background-color: bisque;*/
   display: flex;
   flex-direction: column;
   min-width: 200px;
 }
 
 .Text4 {
-  /*background-color: rgb(13, 134, 40);*/
   text-align: center;
-  
   margin-bottom: 20px;
 }
 .Button4 {
-  /*background-color: aquamarine;*/
   width: 100%;
 }
 .Bild4real{
-  /*background-color: blueviolet;*/
   height: auto;
   width: 100%;
 }
@@ -555,12 +508,11 @@ font-style: normal;
 }
 .Bild4 {
   display: flex-box;
-  flex-direction: row; /* Buttons untereinander anordnen */
-  justify-content: center; /* Vertikal zentrieren */
-  align-items: center; /* Horizontal zentrieren */
-  text-align: center; /* Zentriert den Text */
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
   overflow: hidden;
-  /*background-color: red;*/
   margin-bottom: 150px;
 }
 
@@ -568,14 +520,13 @@ font-style: normal;
   font-family: "futura-pt", sans-serif;
 font-weight: 400;
 font-style: normal;
-  border: none; /* Keine Rahmenlinie um den Button */
-  color: white; /* Schriftfarbe */
-  padding: 15px 32px; /* Innenabstand */
-  text-align: center; /* Ausrichtung des Textes */
-  text-decoration: none; /* Keine Unterstreichung des Textes */
-  /*display: inline-block; /* Anzeige als Inline-Block */
-  font-size: 16px; /* Schriftgröße */
-  cursor: pointer; /* Mauszeiger verwandelt sich in Hand-Zeiger, wenn man über den Button fährt */
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 16px;
+  cursor: pointer; 
 overflow: hidden;
 margin: 5px;
 }
@@ -592,8 +543,6 @@ margin: 5px;
   border: 1px solid white; 
 }
 .Bild4 button.button1:hover {
-  /*background-color: darkred; /* Hintergrundfarbe ändert sich, wenn man den Mauszeiger über den Button bewegt */
-  /*border: 1px solid darkred;*/
   background-color: rgb(255, 255, 255);
 border: 1px solid rgb(255, 255, 255);
 color: rgb(255,0,0);
@@ -604,11 +553,11 @@ border: 1px solid rgb(255, 255, 255);
 color: rgb(255,0,0);
 }
 
-/*Responsive Verhalten Button und Bild*/
+
 @media only screen and (max-width: 900px) {
   .Bild4 {
-    flex-direction: column; /* Ändert die Anordnung auf untereinander */
-    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   .Bild4 p{
     align-items: center;
@@ -623,8 +572,8 @@ color: rgb(255,0,0);
 
 @media only screen and (max-width: 700px) {
   .Bild4 {
-    flex-direction: column; /* Ändert die Anordnung auf untereinander */
-    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   .Bild4 p{
     align-items: center;
@@ -639,8 +588,8 @@ color: rgb(255,0,0);
 
 @media only screen and (max-width: 500px) {
   .Bild4 {
-    flex-direction: column; /* Ändert die Anordnung auf untereinander */
-    align-items: flex-start; /* Setzt die Buttons links ausgerichtet */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   .Bild4 p{
     align-items: center;
@@ -655,7 +604,6 @@ color: rgb(255,0,0);
 }
 
 
-/*Responsive Verhalten*/
 @media only screen and (max-width: 700px) {
 .container img,
 .Bild2 img,
@@ -664,8 +612,8 @@ color: rgb(255,0,0);
 .gallery img,
 .Video1 img,
 .Video2 img {
-  width: 100%; /* Ändere die Breite auf 100%, damit die Bilder responsiv sind */
-  height: auto; /* Autohöhe, um das Seitenverhältnis beizubehalten */
+  width: 100%; 
+  height: auto; 
 }}
 
 @media only screen and (max-width: 500px) {
@@ -676,10 +624,9 @@ color: rgb(255,0,0);
 .gallery img,
 .Video1 img,
 .Video2 img {
-  width: 100%; /* Ändere die Breite auf 100%, damit die Bilder responsiv sind */
-  height: auto; /* Autohöhe, um das Seitenverhältnis beizubehalten */
+  width: 100%; 
+  height: auto; 
 }}
-
 
 
 .navbar2{
@@ -696,16 +643,16 @@ color: rgb(255,0,0);
 }
 @media only screen and (max-width: 700px) {
   .navbar2 marquee {
-    font-size: 30px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
-    margin-top: 10%; /* Ändere den oberen Abstand für den Lauftext */
+    font-size: 30px; 
+    margin-top: 10%; 
     margin-bottom: 20%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .navbar2 marquee {
-    font-size: 30px; /* Anpassung der Schriftgröße für kleinere Bildschirme */
-    margin-top: 10%; /* Ändere den oberen Abstand für den Lauftext */
+    font-size: 30px; 
+    margin-top: 10%; 
     margin-bottom: 20%;
   }
 }
@@ -766,7 +713,6 @@ padding-left: auto;
   }
 }
 
-
 .Datenschutz{
   font-family: "futura-pt", sans-serif;
 font-weight: 400;
@@ -789,7 +735,7 @@ padding: 1%;
 
 @media only screen and (max-width: 700px) {
   .Datenschutz {
-    margin-top: 15%; /* Ändere den oberen Abstand für den Lauftext */
+    margin-top: 15%; 
     margin-bottom: 10%;
     border-color: rgb(84, 84, 84);
 border-width: 1px;
@@ -800,7 +746,7 @@ padding: 1%;
 
 @media only screen and (max-width: 500px) {
   .Datenschutz{
-    margin-top: 15%; /* Ändere den oberen Abstand für den Lauftext */
+    margin-top: 15%; 
     margin-bottom: 10%;
     padding-left: 3%;
     font-size: small;
@@ -835,7 +781,6 @@ padding: 2%;
   }
 }
 
-
    </style>
 <!--CSS-Teil endet hier-->
 
@@ -858,7 +803,7 @@ padding: 2%;
         <h3>Die neue Kampagne unter der künstlerischen Leitung<br>von Rosa Stark,<br>erzählt eine zeitlose Reise in die groteske DNA Italiens.</h3>
         <h4>| #WERBEKAMPAGNE  |</h4>
       </div>
-        <!-- Das Bild mit einem bestimmten Ausschnitt -->
+
 <div class="Schrank"> 
   <div class="container">
     <img class="Bild1" src="images/Kuss-Bild1_neu_v2.png" id="scrollImage">
@@ -910,9 +855,6 @@ padding: 2%;
 
 <div class="clearfix"></div>
 
-
-
-
   <div class="Video1">
     <img src="images/Frau1-Slider1_v3_neu.png" type="image/png" height="100%" width="100%">
   </div>
@@ -958,7 +900,6 @@ padding: 2%;
     
     <div class="clearfix"></div>
 
-    
     <div class="Video2">
       <img src="images/Mann-mit-Dreadlocks-neu_v2.2.png" type="image/png" height="100%" width="100%">
     </div>
@@ -976,16 +917,15 @@ padding: 2%;
           </p>
         </div>
         <div class="Button4"><button class="button1">Jetzt ketchen!</button><!--Call-to-action-button-->
-        <button class="button2">Probiere jetzt</button>
+        <button class="button2">Probiere jetzt</button><!--Ghost-button-->
         </div>
-      </div><!--Ghost-button-->
+      </div>
     </div>
     <div>
     <div class="navbar2"><!--Lauftext-->
     <marquee scrollamount="2">WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO WELT VON DELICATO&GUSTOSO</marquee>
     </div> 
   </div>
-    <!--<hr>-->
     <div class="Logo">
       <a href="#brand">DELICATO&GUSTOSO</a>
       <div class="Badge"><img src="images/allyant-badge_weiß.png" type="image/png"  height="60" width="60"></div>
@@ -998,7 +938,6 @@ padding: 2%;
     </main>
   </body>
 <footer>
-  <!--<hr>-->
   <div id="copyright">
     <div>&copy; 2024 <span class="logo">DELICATO&GUSTOSO - Alle Rechte vorbehalten</span>
     </div>
